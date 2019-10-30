@@ -714,7 +714,7 @@ def read_header_line(line, pattern=None):
         else:
             pattern = (
                 r"\.?(?P<name>[^.]*)\."
-                + r"(?P<unit>[^\s:]*)"
+                + r"(?P<unit>[^\s]*)"
                 + r"(?P<value>[^:]*):"
                 + r"(?P<descr>.*)"
             )
